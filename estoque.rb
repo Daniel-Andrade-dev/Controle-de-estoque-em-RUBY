@@ -79,7 +79,7 @@ def atualizar_produto(estoque, nome, novo_nome, novo_preco, nova_quantidade, ati
     buscar_produto = estoque.find do |produto|
       if produto[:nome_produto] == nome
         produto[:nome_produto] = novo_nome
-        produto[:preco] = novo_preco
+        produto[:preco_produto] = novo_preco
         produto[:quantidade_estoque] = nova_quantidade
         produto[:produto_ativo] = ativo 
         puts "Produto atualizado"
