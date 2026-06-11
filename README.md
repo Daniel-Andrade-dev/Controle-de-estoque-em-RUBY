@@ -23,12 +23,6 @@ Resolver o problema de gerenciamento básico de inventário de forma interativa 
 
 ---
 
-## ⚙️ Requisitos
-
-- **Ruby** `>= 2.5` (sem uso de gems externas)
-- Nenhuma dependência adicional — apenas a biblioteca padrão do Ruby
-
----
 
 ## ▶️ Como Usar
 
@@ -88,8 +82,6 @@ Produto cadastrado
 
 - O estoque é mantido **em memória** (array Ruby) — os dados são perdidos ao encerrar o programa. Para persistência, seria necessário integrar leitura/escrita em arquivo (CSV, JSON) ou banco de dados.
 - A busca por produto é **case-sensitive**: `"Arroz"` e `"arroz"` são tratados como produtos diferentes.
-- O método `atualizar_produto` contém um **bug conhecido**: a chave utilizada na atualização do preço é `:preco` em vez de `:preco_produto`, fazendo com que o preço não seja sobrescrito corretamente na chave original.
-
 ---
 
 ## 👤 Autor
